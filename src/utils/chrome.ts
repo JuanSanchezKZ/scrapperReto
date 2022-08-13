@@ -10,7 +10,7 @@ export async function inyectScrapCandidates(tabId) {
   return inyect("scripts/scrapCandidates.js", tabId);
 }
 
-export async function deleteAndCreateTab(oldId: number, url: string) {
+export async function CreateTab(url: string) {
   try {
     // eslint-disable-next-line no-undef
     // chrome.tabs.remove(oldId);
