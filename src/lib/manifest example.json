@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Scrapper",
+  "description": "Linkedin scrapper",
+  "action": {
+    "default_title": "click me",
+    "default_popup": "index.html"
+  },
+  "background": {
+    "service_worker": "sw.js"
+  },
+  "permissions": ["scripting", "activeTab", "tabs", "notifications"],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "externally_connectable": {
+    "matches": ["https://www.linkedin.com/*"]
+  }
+}
